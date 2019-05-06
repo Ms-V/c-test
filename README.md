@@ -1,3 +1,1 @@
-# c-test
-learn c
-yooooooooooooooooooooooo
+只是一些学习c的测试
