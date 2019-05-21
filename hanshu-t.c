@@ -41,7 +41,7 @@ int min(int num1,int num2)
 
 void up_and_down(int num,int level)//递归是这样，举例在这个函数中运行时，运行到if条件为真时，进入下一层递归
 {                                  //不运行调用自己递归下面的代码，下层递归同理，然后当递归到if条件为假时第一个递归，自己结束，同时开始结束上一层递归
-    printf("Level %d:n location is %p\n",num,&num);//每一层的参数是每一层的，懂？？？？？？？
+    printf("Level %d:n location is %p\n",num,&num);//每一层的参数、变量是每一层的，懂？？？？？？？
     if(num<level)
         up_and_down(num+1,level);
     printf("LEVEL %d:n location is %p\n",num,&num);//
