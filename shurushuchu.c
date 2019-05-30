@@ -39,11 +39,15 @@ int main()
     printf("pta4\n");
     putchar('\n');
     *(ar+7) = 'K';
-    ar[8] = 'O';//两种修改方法
+    ar[8] = 'O';//两种修改方法想
     char o[3];
     gets(o);//不推荐用gets，gets无法检测数组长度，会导致缓冲溢出，c11已经抛弃了gets
     printf("o is %s",o);
     fgets(o,3,stdin);//fgets是gets升级版，第一个为要打印的东西，第二个为最大长度(实际为n-1)，第三个为要读入的文件，键盘输入用stdin就行
     //fgets会存上输入时换行符\n
-    fputs(o,stdout);//fputs是fgets输出，同样第二个为输出文件，填标准输出就行
+    fputs(o,stdout);//fputs是fgets输出，同样第二个为输出文件，填标准输出就行,fputs不会自动在输出时加换行符
+    char scf_a[10], scf_b[11];
+    int scf_co;
+    scf_co=scanf("%5s %6s",scf_a,scf_b);
+    printf("have %d name is %s and %s",scf_co,scf_a,scf_b);
 }
