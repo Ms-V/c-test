@@ -16,7 +16,12 @@ struct yu{
         char h;
     };//匿名union，用法
 };
-
+typedef unsigned char zi;//声明一个无符号字符类型的zi类型！！这是个自定义类型！通常一般用大写来声明，方便识别
+//typedef 遵循变量命名规则
+typedef struct com{
+    int a;
+    char b;
+}COM;//typedef也可以这么玩，就是用的时候把stuct com xx变成了COM xx
 int main()
 {
     union overwatch *zhang;
@@ -28,5 +33,12 @@ int main()
     liu.c = 'a';//同上,并且把13.23.4都删了
     printf("a is %d b is %f c is %c\n",liu.a,liu.b,liu.c);
     enum sap wow;
+    wow = lin;
     printf("lin %d yi %d er %d san %d si %d shi %d shiyi %d \n",lin,yi,er,san,si,shi,shiyi);//枚举是这么用的 想不到吧 我是没想到
+    zi ho[10] = "you !!!!";//自定义完了后就这么用！就是哥类型了！
+    printf("%s\n",ho);
+    COM ww={1,2};
+    printf("ww is %d %d",ww.a,ww.b);
+    for (wow = lin; wow <= shiyi;wow++)//如果枚举被定义了某个元素，这么用for循环wow，是不会看枚举里的数的及时枚举里没有，也会给你按序输出出来的
+        printf("wow is %d\n",wow);
 }
