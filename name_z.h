@@ -11,4 +11,4 @@ typedef struct name_st names;
 
 void get_names(names *);
 void show_names(const names *);
-char s_get(char *st, int n);
+char * s_gets(char * st, int n);

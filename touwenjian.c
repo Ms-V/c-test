@@ -4,9 +4,9 @@
 void get_names(names * pn)
 {
     printf("Please enter first name");
-    s_get(pn->first,SLEN);
+    s_gets(pn->first,SLEN);
     printf("please enter last name");
-    s_get(pn->last,SLEN);
+    s_gets(pn->last,SLEN);
 }
 
 void show_names(const names * pn)
