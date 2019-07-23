@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <assert.h>
 
 #define MAX 50
 void r_s(int [],int);
@@ -18,6 +19,7 @@ int main()
     puts("\nNow sorted list:");
     s_s(rm,MAX);
     return 0;
+    
 }
 
 void r_s(int arr[],int n)
